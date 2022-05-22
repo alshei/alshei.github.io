@@ -31,10 +31,10 @@ const Navbar = () => {
             }
           >
             <ul className="flex flex-col lg:flex-row md:flex-row lg:ml-auto md:ml-auto list-none">
-              <NavLink option="About" link="" />
-              <NavLink option="Experience" link="" />
-              <NavLink option="Portfolio" link="" />
-              <NavLink option="Contact" link="" />
+              <NavLink option="About" link="about" />
+              <NavLink option="Experience" link="experience" />
+              <NavLink option="Portfolio" link="portfolio" />
+              <NavLink option="Contact" link="contact" />
               <Toggle />
             </ul>
           </div>
