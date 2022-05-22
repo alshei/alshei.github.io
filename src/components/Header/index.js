@@ -7,9 +7,9 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="fixed w-full flex flex-wrap items-center justify-between bg-light1 dark:bg-dark1 h-20 z-10">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+      <nav className="fixed backdrop-blur w-full flex flex-wrap items-center justify-between bg-light1/0 dark:bg-dark1/0 h-20 z-10">
+        <div className="container px-8 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative flex justify-between lg:w-auto md:w-auto">
             <a
               className="text-accent text-2xl font-bold pr-4 pl-4 pt-6 pb-6"
               href="#"
@@ -17,7 +17,7 @@ const Navbar = () => {
               mlkywy
             </a>
 
-            <button className="transition duration-500 ease-in-out rounded-full pr-4 pl-4 pt-6 pb-6 lg:hidden">
+            <button className="transition duration-500 ease-in-out rounded-full pr-4 pl-4 pt-6 pb-6 lg:hidden md:hidden">
               <List
                 onClick={() => setNavbarOpen(!navbarOpen)}
                 className="text-middle dark:text-middle text-2xl cursor-pointer"
@@ -26,11 +26,11 @@ const Navbar = () => {
           </div>
           <div
             className={
-              "lg:flex flex-grow items-center" +
+              "lg:flex md:flex flex-grow items-center" +
               (navbarOpen ? " flex" : " hidden")
             }
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="flex flex-col lg:flex-row md:flex-row lg:ml-auto md:ml-auto list-none">
               <NavLink option="About" link="" />
               <NavLink option="Experience" link="" />
               <NavLink option="Portfolio" link="" />
