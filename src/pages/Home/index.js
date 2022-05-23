@@ -10,7 +10,8 @@ const Home = () => {
         <div className="container">
           <Title />
         </div>
-        <div className="container">
+
+        <div className="container h-full">
           <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 15.5] }}>
             <pointLight color="red" />
             <pointLight position={[10, 10, -10]} color="#718096" />
