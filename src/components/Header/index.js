@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import { List } from "phosphor-react";
 import { NavLink } from "../Buttons";
 import Toggle from "../ThemeToggle";
